@@ -1,10 +1,9 @@
-import React from 'react';
-import './index.css';
+import React from "react";
+
+import Test from "./components/Test";
 
 function App() {
-  return (
-    <h1>Hello World</h1>
-  );
+  return <Test />;
 }
 
 export default App;
