@@ -11,7 +11,9 @@ function SideBar() {
         <li>
           <Link to="/cpp">C++</Link>
         </li>
-        <li>Java</li>
+        <li>
+          <Link to="/java">Java</Link>
+        </li>
         <li>Elixir</li>
         <li>C</li>
         <li>Ruby</li>
