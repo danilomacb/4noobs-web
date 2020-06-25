@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 
+import request from "../services/request";
 import Container from "../components/Container";
 
 function Home() {
@@ -7,11 +8,9 @@ function Home() {
 
   useEffect(() => {
     async function getMarkdown() {
-      let response = await fetch("https://api.github.com/repos/he4rt/4noobs/contents/README.MD");
-
-      response = await response.json();
-      response = await fetch(response.download_url);
-      response = await response.text();
+      const response = await request(
+        "https://api.github.com/repos/he4rt/4noobs/contents/README.MD"
+      );
 
       setMarkdown(response);
     }

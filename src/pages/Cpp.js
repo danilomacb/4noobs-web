@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 
+import request from "../services/request";
 import Container from "../components/Container";
 
 function Cpp() {
@@ -7,14 +8,9 @@ function Cpp() {
 
   useEffect(() => {
     async function getMarkdown() {
-      let response = await fetch(
+      const response = await request(
         "https://api.github.com/repos/Novout/cpp4noobs/contents/README.md"
       );
-
-      response = await response.json();
-      console.log(response);
-      response = await fetch(response.download_url);
-      response = await response.text();
 
       setMarkdown(response);
     }
