@@ -1,16 +1,16 @@
 import React from "react";
 import { Route, BrowserRouter } from "react-router-dom";
 
-import Home from "./pages/Home";
-import Cpp from "./pages/Cpp";
-import Java from "./pages/Java";
+import pages from "./pages.json";
+import Page from "./components/Page";
 
 function Routes() {
   return (
     <BrowserRouter>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/cpp" component={Cpp} />
-      <Route exact path="/java" component={Java} />
+      <Route exact path={pages.home.path} component={() => <Page link={pages.home.link} />} />
+      {pages.linguagensDeProgramacao.map((page) => (
+        <Route key={page.name} exact path={page.path} component={() => <Page link={page.link} />} />
+      ))}
     </BrowserRouter>
   );
 }
