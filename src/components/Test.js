@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ReactMarkdown from "react-markdown";
 
 function Test() {
   const [readme, setReadme] = useState("");
@@ -19,7 +20,7 @@ function Test() {
     getReadme();
   }, []);
 
-  return <div>{readme}</div>;
+  return <ReactMarkdown source={readme} />;
 }
 
 export default Test;
