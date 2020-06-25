@@ -1,9 +1,9 @@
 import React from "react";
 
-import Test from "./components/Test";
+import Routes from "./routes";
 
 function App() {
-  return <Test />;
+  return <Routes />;
 }
 
 export default App;
