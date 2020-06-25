@@ -5,19 +5,20 @@ function Test() {
 
   useEffect(() => {
     async function getReadme() {
-      const response = await fetch(
+      let response = await fetch(
         "https://api.github.com/repos/danilomacb/react-portfolio/contents/README.md"
       );
 
-      const readme = await response.json();
+      response = await response.json();
+      response = await fetch(response.download_url);
+      response = await response.text();
 
-      setReadme(readme.content);
+      setReadme(response);
     }
 
     getReadme();
   }, []);
 
-  console.log(readme);
   return <div>{readme}</div>;
 }
 
