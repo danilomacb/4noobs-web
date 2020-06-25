@@ -31,6 +31,15 @@ nav ul li {
   padding: 5px;
 }
 
+nav ul li a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
 #markdown {
   padding: 50px;
   margin-left: 200px;
