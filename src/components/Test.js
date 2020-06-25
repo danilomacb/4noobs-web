@@ -11,7 +11,6 @@ function Test() {
       response = await response.json();
       response = await fetch(response.download_url);
       response = await response.text();
-      debugger;
 
       setReadme(response);
     }
