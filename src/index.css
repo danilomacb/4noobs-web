@@ -1,6 +1,7 @@
 :root {
   --main-color: #8743cc;
   --white: #fff;
+  --gray: #ccc;
 }
 
 * {
@@ -25,7 +26,6 @@ nav {
 }
 
 nav ul li {
-  list-style: none;
   color: var(--white);
   font-size: 20px;
   padding: 5px;
@@ -33,11 +33,79 @@ nav ul li {
 
 nav ul li a {
   color: var(--white);
+}
+
+a {
   text-decoration: none;
 }
 
-nav ul li a:hover {
+a:hover {
   text-decoration: underline;
+}
+
+li {
+  list-style: none;
+}
+
+li ul {
+  margin-left: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  border-bottom: 1px solid var(--gray);
+}
+
+h1 {
+  text-align: center;
+  margin: 30px 0;
+}
+
+h2 {
+  margin: 25px 0;
+}
+
+h3 {
+  margin: 20px 0;
+}
+
+h4 {
+  margin: 15px 0;
+}
+
+h5 {
+  margin: 10px 0;
+}
+
+h6 {
+  margin: 5px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+table {
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid var(--gray);
+  padding: 10px;
+}
+
+img {
+  margin: 20px;
+}
+
+pre {
+  background-color: var(--gray);
+  padding: 5px;
 }
 
 #markdown {
