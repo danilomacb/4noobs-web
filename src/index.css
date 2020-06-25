@@ -1,11 +1,37 @@
+:root {
+  --main-color: #8743cc;
+  --white: #fff;
+}
+
 * {
   padding: 0;
   margin: 0;
 }
 
 main {
-  width: 90%;
-  max-width: 1000px;
   margin: auto auto;
-  padding: 50px 0;
+  display: flex;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  width: 200px;
+  background-color: var(--main-color);
+}
+
+nav ul li {
+  list-style: none;
+  color: var(--white);
+  font-size: 20px;
+  padding: 5px;
+}
+
+#markdown {
+  padding: 50px;
+  margin-left: 200px;
 }
