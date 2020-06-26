@@ -7,8 +7,7 @@ import Page from "./components/Page";
 function Routes() {
   return (
     <BrowserRouter>
-      <Route exact path={pages.home.path} component={() => <Page link={pages.home.link} />} />
-      {pages.linguagensDeProgramacao.map((page) => (
+      {pages.map((page) => (
         <Route key={page.name} exact path={page.path} component={() => <Page link={page.link} />} />
       ))}
     </BrowserRouter>

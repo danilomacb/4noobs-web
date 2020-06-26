@@ -7,10 +7,7 @@ function SideBar() {
   return (
     <nav>
       <ul>
-        <li>
-          <Link to={pages.home.path}>{pages.home.name}</Link>
-        </li>
-        {pages.linguagensDeProgramacao.map((page) => (
+        {pages.map((page) => (
           <li key={page.name}>
             <Link to={page.path}>{page.name}</Link>
           </li>
