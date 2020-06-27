@@ -8,6 +8,7 @@ function SideBar() {
   const [displayFrameworks, setDisplayFrameworks] = useState("none");
   const [displayTools, setDisplayTools] = useState("none");
   const [displayOS, setDisplayOS] = useState("none");
+  const [displayDesign, setDisplayDesign] = useState("none");
 
   function show(category, set) {
     if (category === "none") {
@@ -64,6 +65,17 @@ function SideBar() {
           {pages.operationalSystems.map((os) => (
             <li key={os.name}>
               <Link to={os.path}>{os.name}</Link>
+            </li>
+          ))}
+        </ul>
+
+        <div className="category" onClick={() => show(displayDesign, setDisplayDesign)}>
+          Design
+        </div>
+        <ul style={{ display: displayDesign }}>
+          {pages.designs.map((design) => (
+            <li key={design.name}>
+              <Link to={design.path}>{design.name}</Link>
             </li>
           ))}
         </ul>

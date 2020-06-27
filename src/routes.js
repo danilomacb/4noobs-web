@@ -34,6 +34,15 @@ function Routes() {
       {pages.operationalSystems.map((os) => (
         <Route key={os.name} exact path={os.path} component={() => <Page link={os.link} />} />
       ))}
+
+      {pages.designs.map((design) => (
+        <Route
+          key={design.name}
+          exact
+          path={design.path}
+          component={() => <Page link={design.link} />}
+        />
+      ))}
     </BrowserRouter>
   );
 }

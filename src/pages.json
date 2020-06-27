@@ -101,5 +101,17 @@
       "path": "/arch",
       "link": "https://api.github.com/repos/LucasHe4rt/ArchLinux4noobs/contents/README.md"
     }
+  ],
+  "designs": [
+    {
+      "name": "UX",
+      "path": "/ux",
+      "link": "https://api.github.com/repos/IUX7K/ux4noobs/contents/README.md"
+    },
+    {
+      "name": "UI",
+      "path": "/ui",
+      "link": "https://api.github.com/repos/IUX7K/ux4noobs/contents/README.md"
+    }
   ]
 }
