@@ -17,6 +17,15 @@ function Routes() {
           component={() => <Page link={language.link} />}
         />
       ))}
+
+      {pages.frameworks.map((framework) => (
+        <Route
+          key={framework.name}
+          exact
+          path={framework.path}
+          component={() => <Page link={framework.link} />}
+        />
+      ))}
     </BrowserRouter>
   );
 }

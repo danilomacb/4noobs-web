@@ -41,6 +41,21 @@
       "name": "Vue",
       "path": "/vue",
       "link": "https://api.github.com/repos/Novout/vue4noobs/contents/README.md"
+    },
+    {
+      "name": "Rails",
+      "path": "/rails",
+      "link": "https://api.github.com/repos/edersonferreira/rails4noobs/contents/README.md"
+    },
+    {
+      "name": "NextJs",
+      "path": "/nextjs",
+      "link": "https://api.github.com/repos/gaviusking/NextJs4noobs/contents/README.md"
+    },
+    {
+      "name": "Flask",
+      "path": "/flask",
+      "link": "https://api.github.com/repos/freazesss/flask4noobs/contents/README.md"
     }
   ]
 }
