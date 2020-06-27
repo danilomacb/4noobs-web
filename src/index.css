@@ -1,5 +1,6 @@
 :root {
   --main-color: #8743cc;
+  --main-color-darker: #4e1f7d;
   --white: #fff;
   --gray: #ccc;
 }
@@ -25,10 +26,13 @@ nav {
   background-color: var(--main-color);
 }
 
+nav ul ul {
+  background-color: var(--main-color-darker);
+}
+
 nav ul li {
   color: var(--white);
   font-size: 20px;
-  padding: 5px;
 }
 
 nav ul li a {
