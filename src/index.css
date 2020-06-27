@@ -85,6 +85,10 @@ h6 {
   margin: 5px 0;
 }
 
+label {
+  color: var(--white);
+}
+
 p {
   margin: 10px 0;
 }
