@@ -57,5 +57,32 @@
       "path": "/flask",
       "link": "https://api.github.com/repos/freazesss/flask4noobs/contents/README.md"
     }
+  ],
+  "tools": [
+    {
+      "name": "Git",
+      "path": "/git",
+      "link": "https://api.github.com/repos/DanielHe4rt/git4noobs/contents/README.md"
+    },
+    {
+      "name": "Vim",
+      "path": "/vim",
+      "link": "https://api.github.com/repos/hellowluan/vim4noobs/contents/README.md"
+    },
+    {
+      "name": "Markdown",
+      "path": "/markdown",
+      "link": "https://api.github.com/repos/jpaulohe4rt/markdown4noobs/contents/README.md"
+    },
+    {
+      "name": "ZSH",
+      "path": "/zsh",
+      "link": "https://api.github.com/repos/edersonferreira/zsh4noobs/contents/README.md"
+    },
+    {
+      "name": "WM",
+      "path": "/wm",
+      "link": "https://api.github.com/repos/i686leak/wm4noobs/contents/README.md"
+    }
   ]
 }

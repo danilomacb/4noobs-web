@@ -6,6 +6,7 @@ import pages from "../pages.json";
 function SideBar() {
   const [displayLanguages, setDisplayLanguages] = useState("none");
   const [displayFrameworks, setDisplayFrameworks] = useState("none");
+  const [displayTools, setDisplayTools] = useState("none");
 
   function show(category, set) {
     if (category === "none") {
@@ -40,6 +41,17 @@ function SideBar() {
           {pages.frameworks.map((framework) => (
             <li key={framework.name}>
               <Link to={framework.path}>{framework.name}</Link>
+            </li>
+          ))}
+        </ul>
+
+        <br />
+
+        <label onClick={() => show(displayTools, setDisplayTools)}>Tools</label>
+        <ul style={{ display: displayTools }}>
+          {pages.tools.map((tool) => (
+            <li key={tool.name}>
+              <Link to={tool.path}>{tool.name}</Link>
             </li>
           ))}
         </ul>
