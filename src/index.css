@@ -21,7 +21,7 @@ nav {
   justify-content: center;
   text-align: center;
   height: 100vh;
-  width: 200px;
+  width: 300px;
   background-color: var(--main-color);
 }
 
@@ -33,6 +33,17 @@ nav ul li {
 
 nav ul li a {
   color: var(--white);
+}
+
+nav ul .category {
+  color: var(--white);
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+nav ul .category:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 a {
@@ -85,10 +96,6 @@ h6 {
   margin: 5px 0;
 }
 
-label {
-  color: var(--white);
-}
-
 p {
   margin: 10px 0;
 }
@@ -114,6 +121,6 @@ pre {
 
 #markdown {
   padding: 50px;
-  margin-left: 200px;
+  margin-left: 300px;
   width: 100%;
 }

@@ -84,5 +84,22 @@
       "path": "/wm",
       "link": "https://api.github.com/repos/i686leak/wm4noobs/contents/README.md"
     }
+  ],
+  "operationalSystems": [
+    {
+      "name": "Linux",
+      "path": "/linux",
+      "link": "https://api.github.com/repos/lucashe4rt/linux4noobs/contents/README.md"
+    },
+    {
+      "name": "Windows",
+      "path": "/windows",
+      "link": "https://api.github.com/repos/vsouzaalmeida/windows4noobs/contents/readme.md"
+    },
+    {
+      "name": "Arch Linux",
+      "path": "/arch",
+      "link": "https://api.github.com/repos/LucasHe4rt/ArchLinux4noobs/contents/README.md"
+    }
   ]
 }

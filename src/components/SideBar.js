@@ -7,6 +7,7 @@ function SideBar() {
   const [displayLanguages, setDisplayLanguages] = useState("none");
   const [displayFrameworks, setDisplayFrameworks] = useState("none");
   const [displayTools, setDisplayTools] = useState("none");
+  const [displayOS, setDisplayOS] = useState("none");
 
   function show(category, set) {
     if (category === "none") {
@@ -23,9 +24,9 @@ function SideBar() {
           <Link to={pages.home.path}>{pages.home.name}</Link>
         </li>
 
-        <label onClick={() => show(displayLanguages, setDisplayLanguages)}>
+        <div className="category" onClick={() => show(displayLanguages, setDisplayLanguages)}>
           Linguagens de programação
-        </label>
+        </div>
         <ul style={{ display: displayLanguages }}>
           {pages.programingLanguages.map((language) => (
             <li key={language.name}>
@@ -34,9 +35,9 @@ function SideBar() {
           ))}
         </ul>
 
-        <br />
-
-        <label onClick={() => show(displayFrameworks, setDisplayFrameworks)}>Frameworks</label>
+        <div className="category" onClick={() => show(displayFrameworks, setDisplayFrameworks)}>
+          Frameworks
+        </div>
         <ul style={{ display: displayFrameworks }}>
           {pages.frameworks.map((framework) => (
             <li key={framework.name}>
@@ -45,13 +46,24 @@ function SideBar() {
           ))}
         </ul>
 
-        <br />
-
-        <label onClick={() => show(displayTools, setDisplayTools)}>Tools</label>
+        <div className="category" onClick={() => show(displayTools, setDisplayTools)}>
+          Tools
+        </div>
         <ul style={{ display: displayTools }}>
           {pages.tools.map((tool) => (
             <li key={tool.name}>
               <Link to={tool.path}>{tool.name}</Link>
+            </li>
+          ))}
+        </ul>
+
+        <div className="category" onClick={() => show(displayOS, setDisplayOS)}>
+          Sistemas operacionais
+        </div>
+        <ul style={{ display: displayOS }}>
+          {pages.operationalSystems.map((os) => (
+            <li key={os.name}>
+              <Link to={os.path}>{os.name}</Link>
             </li>
           ))}
         </ul>

@@ -30,6 +30,10 @@ function Routes() {
       {pages.tools.map((tool) => (
         <Route key={tool.name} exact path={tool.path} component={() => <Page link={tool.link} />} />
       ))}
+
+      {pages.operationalSystems.map((os) => (
+        <Route key={os.name} exact path={os.path} component={() => <Page link={os.link} />} />
+      ))}
     </BrowserRouter>
   );
 }
