@@ -1,0 +1,63 @@
+@import "./colors.scss";
+
+nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  width: 300px;
+  background-color: $main-color;
+}
+
+nav ul li {
+  color: $white;
+  font-size: 20px;
+}
+
+nav ul li a {
+  color: $white;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+li ul {
+  margin-left: 10px;
+}
+
+#home {
+  display: block;
+  padding: 10px;
+}
+
+.categoryName {
+  color: $white;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.categoryList {
+  background-color: $main-color-darker;
+  margin-bottom: 10px;
+}
+
+.categoryName,
+#home {
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: $main-color-light;
+  }
+}

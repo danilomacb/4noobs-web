@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+import "../styles/sideBar.scss";
 import pages from "../pages.json";
 
 function SideBar() {
