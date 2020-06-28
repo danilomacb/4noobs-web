@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 import "../styles/sideBar.scss";
 import pages from "../pages.json";
@@ -30,6 +32,11 @@ function SideBar() {
 
         <li className="categoryName" onClick={() => show(displayLanguages, setDisplayLanguages)}>
           Linguagens de programação
+          {displayLanguages === "none" ? (
+            <FontAwesomeIcon icon={faChevronDown} />
+          ) : (
+            <FontAwesomeIcon icon={faChevronUp} />
+          )}
         </li>
         <ul className="categoryList" style={{ display: displayLanguages }}>
           {pages.programingLanguages.map((language) => (
@@ -41,6 +48,11 @@ function SideBar() {
 
         <li className="categoryName" onClick={() => show(displayFrameworks, setDisplayFrameworks)}>
           Frameworks
+          {displayFrameworks === "none" ? (
+            <FontAwesomeIcon icon={faChevronDown} />
+          ) : (
+            <FontAwesomeIcon icon={faChevronUp} />
+          )}
         </li>
         <ul className="categoryList" style={{ display: displayFrameworks }}>
           {pages.frameworks.map((framework) => (
@@ -52,6 +64,11 @@ function SideBar() {
 
         <li className="categoryName" onClick={() => show(displayTools, setDisplayTools)}>
           Tools
+          {displayTools === "none" ? (
+            <FontAwesomeIcon icon={faChevronDown} />
+          ) : (
+            <FontAwesomeIcon icon={faChevronUp} />
+          )}
         </li>
         <ul className="categoryList" style={{ display: displayTools }}>
           {pages.tools.map((tool) => (
@@ -63,6 +80,11 @@ function SideBar() {
 
         <li className="categoryName" onClick={() => show(displayOS, setDisplayOS)}>
           Sistemas operacionais
+          {displayOS === "none" ? (
+            <FontAwesomeIcon icon={faChevronDown} />
+          ) : (
+            <FontAwesomeIcon icon={faChevronUp} />
+          )}
         </li>
         <ul className="categoryList" style={{ display: displayOS }}>
           {pages.operationalSystems.map((os) => (
@@ -74,6 +96,11 @@ function SideBar() {
 
         <li className="categoryName" onClick={() => show(displayDesign, setDisplayDesign)}>
           Design
+          {displayDesign === "none" ? (
+            <FontAwesomeIcon icon={faChevronDown} />
+          ) : (
+            <FontAwesomeIcon icon={faChevronUp} />
+          )}
         </li>
         <ul className="categoryList" style={{ display: displayDesign }}>
           {pages.designs.map((design) => (
