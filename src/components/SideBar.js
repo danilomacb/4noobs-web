@@ -22,60 +22,62 @@ function SideBar() {
   return (
     <nav>
       <ul>
-        <li id="home">
-          <Link to={pages.home.path}>{pages.home.name}</Link>
+        <li>
+          <Link id="home" to={pages.home.path}>
+            {pages.home.name}
+          </Link>
         </li>
 
-        <div className="categoryName" onClick={() => show(displayLanguages, setDisplayLanguages)}>
+        <li className="categoryName" onClick={() => show(displayLanguages, setDisplayLanguages)}>
           Linguagens de programação
-        </div>
+        </li>
         <ul className="categoryList" style={{ display: displayLanguages }}>
           {pages.programingLanguages.map((language) => (
-            <li key={language.name}>
+            <li className="categoryItem" key={language.name}>
               <Link to={language.path}>{language.name}</Link>
             </li>
           ))}
         </ul>
 
-        <div className="categoryName" onClick={() => show(displayFrameworks, setDisplayFrameworks)}>
+        <li className="categoryName" onClick={() => show(displayFrameworks, setDisplayFrameworks)}>
           Frameworks
-        </div>
+        </li>
         <ul className="categoryList" style={{ display: displayFrameworks }}>
           {pages.frameworks.map((framework) => (
-            <li key={framework.name}>
+            <li className="categoryItem" key={framework.name}>
               <Link to={framework.path}>{framework.name}</Link>
             </li>
           ))}
         </ul>
 
-        <div className="categoryName" onClick={() => show(displayTools, setDisplayTools)}>
+        <li className="categoryName" onClick={() => show(displayTools, setDisplayTools)}>
           Tools
-        </div>
+        </li>
         <ul className="categoryList" style={{ display: displayTools }}>
           {pages.tools.map((tool) => (
-            <li key={tool.name}>
+            <li className="categoryItem" key={tool.name}>
               <Link to={tool.path}>{tool.name}</Link>
             </li>
           ))}
         </ul>
 
-        <div className="categoryName" onClick={() => show(displayOS, setDisplayOS)}>
+        <li className="categoryName" onClick={() => show(displayOS, setDisplayOS)}>
           Sistemas operacionais
-        </div>
+        </li>
         <ul className="categoryList" style={{ display: displayOS }}>
           {pages.operationalSystems.map((os) => (
-            <li key={os.name}>
+            <li className="categoryItem" key={os.name}>
               <Link to={os.path}>{os.name}</Link>
             </li>
           ))}
         </ul>
 
-        <div className="categoryName" onClick={() => show(displayDesign, setDisplayDesign)}>
+        <li className="categoryName" onClick={() => show(displayDesign, setDisplayDesign)}>
           Design
-        </div>
+        </li>
         <ul className="categoryList" style={{ display: displayDesign }}>
           {pages.designs.map((design) => (
-            <li key={design.name}>
+            <li className="categoryItem" key={design.name}>
               <Link to={design.path}>{design.name}</Link>
             </li>
           ))}

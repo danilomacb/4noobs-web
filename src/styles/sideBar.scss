@@ -8,56 +8,51 @@ nav {
   text-align: center;
   height: 100vh;
   width: 300px;
-  background-color: $main-color;
-}
-
-nav ul li {
-  color: $white;
-  font-size: 20px;
-}
-
-nav ul li a {
-  color: $white;
-}
-
-a {
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
+  background-color: $purple2;
 }
 
 li {
   list-style: none;
 }
 
-li ul {
-  margin-left: 10px;
-}
-
-#home {
+#home,
+.categoryName,
+.categoryItem a {
   display: block;
-  padding: 10px;
+  color: $white;
+  font-size: 16pt;
+  padding: 8px;
 }
 
 .categoryName {
-  color: $white;
-  font-size: 20px;
-  padding: 10px;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .categoryList {
-  background-color: $main-color-darker;
-  margin-bottom: 10px;
+  background-color: $purple4;
+  margin-bottom: 8px;
+  border-radius: 0 0 16px 16px;
 }
 
-.categoryName,
-#home {
+#home,
+.categoryName {
   &:hover {
-    text-decoration: underline;
     cursor: pointer;
-    background-color: $main-color-light;
+    background-color: $purple1;
+    text-decoration: none;
+  }
+}
+
+.categoryItem {
+  &:hover {
+    background-color: $purple3;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  &:last-child {
+    border-radius: 0 0 16px 16px;
   }
 }
