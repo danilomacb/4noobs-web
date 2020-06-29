@@ -63,7 +63,7 @@ function SideBar() {
         </ul>
 
         <li className="categoryName" onClick={() => show(displayTools, setDisplayTools)}>
-          Tools
+          Ferramentas
           {displayTools === "none" ? (
             <FontAwesomeIcon icon={faChevronDown} />
           ) : (
