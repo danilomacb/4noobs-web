@@ -1,18 +1,22 @@
 async function request(link) {
-  function getTags(markdown) {
-    //wip
-    let index = 0;
+  function getLinks(markdown) {
+    let linkStartCollection = [];
+    let linkEndCollection = [];
+    const element = "](/";
+    let linkPosition = markdown.indexOf(element);
+    let allLinks = [];
 
-    while (index !== -1) {
-      let imgPosition = markdown.indexOf("<img", index);
-
-      if (imgPosition !== -1) {
-        index = imgPosition + 1;
-      } else {
-        index = imgPosition;
-      }
-      console.log(imgPosition);
+    while (linkPosition !== -1) {
+      linkStartCollection.push(linkPosition);
+      linkEndCollection.push(markdown.indexOf(")", linkPosition));
+      linkPosition = markdown.indexOf(element, linkPosition + 1);
     }
+
+    for (let i = 0; i < linkStartCollection.length; i++) {
+      allLinks.push(markdown.substring(linkStartCollection[i] + 2, linkEndCollection[i]));
+    }
+
+    console.log(allLinks);
   }
 
   try {
@@ -22,7 +26,7 @@ async function request(link) {
     response = await fetch(response.download_url);
     response = await response.text();
 
-    getTags(response);
+    getLinks(response);
 
     return response;
   } catch (err) {
