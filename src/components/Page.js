@@ -14,7 +14,7 @@ function Page({ link }) {
     }
 
     getMarkdown();
-  }, []);
+  }, [link]);
 
   return <Container markdown={markdown} />;
 }
