@@ -26,7 +26,7 @@ function SideBar() {
       <ul>
         <li>
           <Link id="home" to={pages.home.path}>
-            {pages.home.name}
+            <img src={`${process.env.PUBLIC_URL}/images/he4rt.png`} alt=""/>
           </Link>
         </li>
 
