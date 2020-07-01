@@ -1,17 +1,24 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
+import { connect } from "react-redux";
 
 import SideBar from "./SideBar";
 
-function Container({ markdown }) {
+function Container({ readme }) {
   return (
     <main>
       <SideBar />
       <div id="markdown">
-        <ReactMarkdown source={markdown} escapeHtml={false} />
+        <ReactMarkdown source={readme} escapeHtml={false} />
       </div>
     </main>
   );
 }
 
-export default Container;
+function mapStateToProps(state) {
+  return {
+    readme: state.readme,
+  };
+}
+
+export default connect(mapStateToProps)(Container);
