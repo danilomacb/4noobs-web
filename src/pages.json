@@ -113,5 +113,12 @@
       "path": "/ui",
       "link": "https://api.github.com/repos/IUX7K/ux4noobs/contents/README.md"
     }
+  ],
+  "models": [
+    {
+      "name": "4noobs Model",
+      "path": "/model",
+      "link": "https://api.github.com/repos/danilomacb/4noobs-model/contents/README.md"
+    }
   ]
 }

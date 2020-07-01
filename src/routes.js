@@ -43,6 +43,15 @@ function Routes() {
           component={() => <Page link={design.link} />}
         />
       ))}
+
+      {pages.models.map((model) => (
+        <Route
+          key={model.name}
+          exact
+          path={model.path}
+          component={() => <Page link={model.link} />}
+        />
+      ))}
     </BrowserRouter>
   );
 }
