@@ -1,8 +1,8 @@
 async function getReadme(user, repository) {
-  const ReadmeLink = `https://api.github.com/repos/${user}/${repository}/contents/README.md`;
+  const readmeLink = `https://api.github.com/repos/${user}/${repository}/contents/README.md`;
 
   try {
-    let readme = await fetch(ReadmeLink);
+    let readme = await fetch(readmeLink);
 
     readme = await readme.json();
     readme = await fetch(readme.download_url);

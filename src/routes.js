@@ -1,10 +1,13 @@
 import React from "react";
 import { Route, BrowserRouter } from "react-router-dom";
+import { connect } from "react-redux";
 
 import pages from "./pages.json";
 import Page from "./components/Page";
 
-function Routes() {
+function Routes({ files }) {
+  console.log(files);
+
   return (
     <BrowserRouter>
       <Route
@@ -17,4 +20,10 @@ function Routes() {
   );
 }
 
-export default Routes;
+function mapStateToProps(state) {
+  return {
+    files: state.files,
+  };
+}
+
+export default connect(mapStateToProps)(Routes);
