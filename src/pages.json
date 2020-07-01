@@ -2,6 +2,7 @@
   "model": {
     "name": "4noobs Model",
     "path": "/model",
-    "link": "https://api.github.com/repos/danilomacb/4noobs-model/contents/README.md"
+    "user": "danilomacb",
+    "repository": "4noobs-model"
   }
 }

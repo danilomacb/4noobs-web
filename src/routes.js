@@ -11,7 +11,7 @@ function Routes() {
         key={pages.model.name}
         exact
         path={pages.model.path}
-        component={() => <Page link={pages.model.link} />}
+        component={() => <Page user={pages.model.user} repository={pages.model.repository} />}
       />
     </BrowserRouter>
   );

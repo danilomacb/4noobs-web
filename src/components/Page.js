@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from "react";
 
-import request from "../services/request";
+import getReadme from "../services/getReadme";
 import Container from "../components/Container";
 
-function Page({ link }) {
+function Page({ user, repository }) {
   const [markdown, setMarkdown] = useState("");
 
   useEffect(() => {
     async function getMarkdown() {
-      const response = await request(link);
+      const response = await getReadme(user, repository);
 
       setMarkdown(response);
     }
 
     getMarkdown();
-  }, [link]);
+  }, [user, repository]);
 
   return <Container markdown={markdown} />;
 }
