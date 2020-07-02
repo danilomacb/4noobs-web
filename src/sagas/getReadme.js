@@ -3,7 +3,6 @@ import { all, call, takeEvery, put } from "redux-saga/effects";
 import { GET_README, SET_README } from "../state/actions";
 
 function* getReadme({ user, repository }) {
-  debugger;
   const link = `https://api.github.com/repos/${user}/${repository}/contents/README.md`;
   let readme = yield call(fetch, link);
 
