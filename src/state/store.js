@@ -3,6 +3,7 @@ import createSagaMiddleware from "redux-saga";
 
 import reducers from "./reducers";
 import getReadme from "../sagas/getReadme";
+import getFiles from "../sagas/getFiles";
 
 function configureStore() {
   const sagaMiddleware = createSagaMiddleware();
@@ -10,6 +11,7 @@ function configureStore() {
   const store = createStore(reducers, applyMiddleware(sagaMiddleware));
 
   sagaMiddleware.run(getReadme);
+  sagaMiddleware.run(getFiles);
 
   return store;
 }

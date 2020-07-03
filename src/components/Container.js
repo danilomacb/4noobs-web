@@ -4,7 +4,8 @@ import { connect } from "react-redux";
 
 import SideBar from "./SideBar";
 
-function Container({ readme }) {
+function Container({ readme, files }) {
+  console.log(files);
   return (
     <main>
       <SideBar />
@@ -18,6 +19,7 @@ function Container({ readme }) {
 function mapStateToProps(state) {
   return {
     readme: state.readme,
+    files: state.files,
   };
 }
 

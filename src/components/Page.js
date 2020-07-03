@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 
-import { getReadme } from "../state/actions";
+import { getReadme, getFiles } from "../state/actions";
 import Container from "../components/Container";
 
 function Page({ user, repository }) {
@@ -9,6 +9,10 @@ function Page({ user, repository }) {
 
   useEffect(() => {
     dispatch(getReadme(user, repository));
+  }, [dispatch, repository, user]);
+
+  useEffect(() => {
+    dispatch(getFiles(user, repository));
   }, [dispatch, repository, user]);
 
   return <Container />;
