@@ -8,7 +8,6 @@ function Routes() {
   return (
     <BrowserRouter>
       <Route
-        key={pages.model.name}
         exact
         path={pages.model.path}
         component={() => <Page user={pages.model.user} repository={pages.model.repository} />}
