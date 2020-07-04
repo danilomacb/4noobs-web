@@ -14,60 +14,6 @@ nav {
 li {
   list-style: none;
 }
-
-#home {
-  margin-top: 32px;
-
-  img {
-    margin: 0;
-    height: 56px;
-    width: 56px;
-  }
-}
-
-#home,
-.categoryName,
-.categoryItem a {
-  display: block;
+nav ul li a {
   color: $white;
-  font-size: 14pt;
-  padding: 8px;
-}
-
-.categoryName {
-  margin-top: 8px;
-}
-
-.categoryList {
-  background-color: $purple4;
-  margin-bottom: 8px;
-  border-radius: 0 0 16px 16px;
-}
-
-#home,
-.categoryName {
-  &:hover {
-    cursor: pointer;
-    background-color: $purple1;
-    text-decoration: none;
-  }
-
-  svg {
-    font-size: 10pt;
-    margin-left: 8px;
-  }
-}
-
-.categoryItem {
-  &:hover {
-    background-color: $purple3;
-  }
-
-  a:hover {
-    text-decoration: none;
-  }
-
-  &:last-child {
-    border-radius: 0 0 16px 16px;
-  }
 }

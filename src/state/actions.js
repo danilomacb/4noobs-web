@@ -7,6 +7,6 @@ export function getReadme(user, repository) {
   return { type: GET_README, user, repository };
 }
 
-export function getFiles(user, repository) {
-  return { type: GET_FILES, user, repository };
+export function getFiles(user, repository, path) {
+  return { type: GET_FILES, user, repository, path };
 }
