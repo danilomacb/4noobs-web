@@ -8,15 +8,23 @@ import { getFiles } from "../state/actions";
 
 function SideBar({ dispatch, files }) {
   useEffect(() => {
-    dispatch(getFiles(pages.model.user, pages.model.repository, pages.model.path));
+    dispatch(getFiles(pages[0].user, pages[0].repository, pages[0].path));
   }, [dispatch]);
 
   return (
     <nav>
       <ul>
         <li>
-          <Link to={pages.model.path}>{pages.model.name}</Link>
+          <Link to="/">
+            <img src={`${process.env.PUBLIC_URL}/images/he4rt.png`} alt="4noobs" />
+          </Link>
         </li>
+
+        {pages.map((page) => (
+          <li key={page.name}>
+            <Link to={page.path}>{page.name}</Link>
+          </li>
+        ))}
 
         {files &&
           files.map((file) => (

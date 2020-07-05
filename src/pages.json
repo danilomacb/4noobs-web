@@ -1,8 +1,8 @@
-{
-  "model": {
+[
+  {
     "name": "4noobs Model",
     "path": "/model",
     "user": "danilomacb",
     "repository": "4noobs-model"
   }
-}
+]

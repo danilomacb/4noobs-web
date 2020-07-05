@@ -14,6 +14,12 @@ nav {
 li {
   list-style: none;
 }
+
 nav ul li a {
   color: $white;
+}
+
+nav ul li a img {
+  height: 56px;
+  width: 56px;
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Route, BrowserRouter } from "react-router-dom";
 
 import pages from "./pages.json";
@@ -10,14 +10,25 @@ function Routes() {
   return (
     <BrowserRouter>
       <SideBar />
+
       <Route
         exact
-        path={pages.model.path}
-        component={(props) => (
-          <Readme {...props} user={pages.model.user} repository={pages.model.repository} />
-        )}
+        path="/"
+        component={(props) => <Readme {...props} user="danilomacb" repository="4noobs" />}
       />
-      <Route exact path={`${pages.model.path}/:file`} component={Dock} />
+
+      {pages.map((page) => (
+        <Fragment key={page.name}>
+          <Route
+            exact
+            path={page.path}
+            component={(props) => (
+              <Readme {...props} user={page.user} repository={page.repository} />
+            )}
+          />
+          <Route exact path={`${page.path}/:file`} component={Dock} />
+        </Fragment>
+      ))}
     </BrowserRouter>
   );
 }
