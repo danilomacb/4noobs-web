@@ -1,8 +1,12 @@
 [
   {
     "name": "4noobs Model",
-    "path": "/model",
     "user": "danilomacb",
     "repository": "4noobs-model"
+  },
+  {
+    "name": "Java",
+    "user": "danilomacb",
+    "repository": "java4noobs"
   }
 ]
