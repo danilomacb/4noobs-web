@@ -21,9 +21,7 @@ function Markdown({ match }) {
 
   return (
     <main>
-      <div id="markdown">
-        <ReactMarkdown source={markdown} escapeHtml={false} />
-      </div>
+      <ReactMarkdown source={markdown} escapeHtml={false} />
     </main>
   );
 }
