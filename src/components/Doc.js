@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 
 import changeLinks from "../utils/changeLinks";
 
-function Markdown({ match }) {
+function Doc({ match }) {
   const [markdown, setMardown] = useState("");
 
   useEffect(() => {
@@ -11,7 +11,7 @@ function Markdown({ match }) {
 
     async function getMarkdown() {
       let readme = await fetch(
-        `https://api.github.com/repos/${match.params.user}/${match.params.repository}/contents/README.md`
+        `https://api.github.com/repos/${match.params.user}/${match.params.repository}/contents/docs/${match.params.file}`
       );
       readme = await readme.json();
       readme = await fetch(readme.download_url);
@@ -21,7 +21,7 @@ function Markdown({ match }) {
 
       setMardown(readme);
     }
-  }, [match.params.user, match.params.repository]);
+  }, [match.params.user, match.params.repository, match.params.file]);
 
   return (
     <main>
@@ -30,4 +30,4 @@ function Markdown({ match }) {
   );
 }
 
-export default Markdown;
+export default Doc;
