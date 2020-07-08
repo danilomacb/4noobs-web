@@ -1,6 +1,6 @@
 function changeLinksAndImages(markdown, user, respository) {
-  const docs = new RegExp("/docs", "g");
-  const assets = new RegExp("/assets", "g");
+  const docs = new RegExp("./docs", "g");
+  const assets = new RegExp("./assets", "g");
 
   let newMarkdown = markdown;
 
