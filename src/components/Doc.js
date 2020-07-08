@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 
-import changeLinks from "../utils/changeLinks";
+import changeLinksAndImages from "../utils/changeLinksAndImages";
 
 function Doc({ match }) {
   const [markdown, setMardown] = useState("");
@@ -17,7 +17,7 @@ function Doc({ match }) {
       response = await fetch(response.download_url);
       response = await response.text();
 
-      response = changeLinks(response, match.params.user, match.params.repository);
+      response = changeLinksAndImages(response, match.params.user, match.params.repository);
 
       setMardown(response);
     }
