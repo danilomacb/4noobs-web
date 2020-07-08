@@ -10,16 +10,16 @@ function Markdown({ match }) {
     getMarkdown();
 
     async function getMarkdown() {
-      let readme = await fetch(
+      let response = await fetch(
         `https://api.github.com/repos/${match.params.user}/${match.params.repository}/contents/README.md`
       );
-      readme = await readme.json();
-      readme = await fetch(readme.download_url);
-      readme = await readme.text();
+      response = await response.json();
+      response = await fetch(response.download_url);
+      response = await response.text();
 
-      readme = changeLinks(readme, match.params.user, match.params.repository);
+      response = changeLinks(response, match.params.user, match.params.repository);
 
-      setMardown(readme);
+      setMardown(response);
     }
   }, [match.params.user, match.params.repository]);
 

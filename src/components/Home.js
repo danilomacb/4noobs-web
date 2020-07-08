@@ -9,12 +9,12 @@ function Home() {
   }, []);
 
   async function getMarkdown() {
-    let readme = await fetch("https://api.github.com/repos/danilomacb/4noobs/contents/README.md");
-    readme = await readme.json();
-    readme = await fetch(readme.download_url);
-    readme = await readme.text();
+    let response = await fetch("https://api.github.com/repos/danilomacb/4noobs/contents/README.md");
+    response = await response.json();
+    response = await fetch(response.download_url);
+    response = await response.text();
 
-    setMardown(readme);
+    setMardown(response);
   }
 
   return (
