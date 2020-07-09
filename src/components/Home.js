@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ReactMarkdown from "react-markdown";
+import ReactMarkdown from "react-markdown/with-html";
 
 function Home() {
   const [markdown, setMardown] = useState("");
