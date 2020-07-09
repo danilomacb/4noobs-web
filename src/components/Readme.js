@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 
 import changeLinksAndImages from "../utils/changeLinksAndImages";
 
-function Markdown({ match }) {
+function Readme({ match }) {
   const [markdown, setMardown] = useState("");
 
   useEffect(() => {
@@ -30,4 +30,4 @@ function Markdown({ match }) {
   );
 }
 
-export default Markdown;
+export default Readme;
