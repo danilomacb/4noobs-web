@@ -8,13 +8,13 @@ function changeLinksAndImages(markdown, user, repository, path) {
   let assets;
 
   if (path === "/" || path === "/:user/:repository") {
-    docs = new RegExp("./docs", "g");
-    assets = new RegExp("./assets", "g");
+    docs = new RegExp("./4noobsDocs", "g");
+    assets = new RegExp("./4noobsAssets", "g");
   }
 
   if (path === "/:user/:repository/:file") {
-    docs = new RegExp("../docs", "g");
-    assets = new RegExp("../assets", "g");
+    docs = new RegExp("../4noobsDocs", "g");
+    assets = new RegExp("../4noobsAssets", "g");
   }
 
   let newMarkdown = markdown;
@@ -22,7 +22,7 @@ function changeLinksAndImages(markdown, user, repository, path) {
   newMarkdown = newMarkdown.replace(docs, `/${user}/${repository}`);
   newMarkdown = newMarkdown.replace(
     assets,
-    `https://raw.githubusercontent.com/${user}/${repository}/master/assets`
+    `https://raw.githubusercontent.com/${user}/${repository}/master/4noobsAssets`
   );
 
   return newMarkdown;

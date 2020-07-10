@@ -13,7 +13,7 @@ async function getMarkdown(match) {
       break;
 
     case "/:user/:repository/:file":
-      link = `https://api.github.com/repos/${match.params.user}/${match.params.repository}/contents/docs/${match.params.file}`;
+      link = `https://api.github.com/repos/${match.params.user}/${match.params.repository}/contents/4noobsDocs/${match.params.file}`;
       break;
 
     default:
