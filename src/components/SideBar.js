@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import "../styles/sideBar.scss";
-import pages from "../pages.json";
+import pages from "../4noobs.json";
 
 function SideBar() {
   return (
