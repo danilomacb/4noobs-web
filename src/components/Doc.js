@@ -17,11 +17,11 @@ function Doc({ match }) {
       response = await fetch(response.download_url);
       response = await response.text();
 
-      response = changeLinksAndImages(response, match.params.user, match.params.repository);
+      response = changeLinksAndImages(response, match.params.user, match.params.repository, match.path);
 
       setMardown(response);
     }
-  }, [match.params.user, match.params.repository, match.params.file]);
+  }, [match.params.user, match.params.repository, match.params.file, match.path]);
 
   return (
     <main>
