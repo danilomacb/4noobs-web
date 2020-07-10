@@ -1,27 +1,16 @@
 import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown/with-html";
 
-import changeLinksAndImages from "../utils/changeLinksAndImages";
+import getMarkdown from "../utils/getMarkdown";
 
 function Doc({ match }) {
   const [markdown, setMardown] = useState("");
 
   useEffect(() => {
-    getMarkdown();
-
-    async function getMarkdown() {
-      let response = await fetch(
-        `https://api.github.com/repos/${match.params.user}/${match.params.repository}/contents/docs/${match.params.file}`
-      );
-      response = await response.json();
-      response = await fetch(response.download_url);
-      response = await response.text();
-
-      response = changeLinksAndImages(response, match.params.user, match.params.repository, match.path);
-
+    getMarkdown(match).then((response) => {
       setMardown(response);
-    }
-  }, [match.params.user, match.params.repository, match.params.file, match.path]);
+    });
+  }, [match]);
 
   return (
     <main>
