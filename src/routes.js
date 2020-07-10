@@ -2,9 +2,9 @@ import React from "react";
 import { Route, BrowserRouter } from "react-router-dom";
 
 import SideBar from "./components/SideBar";
-import Home from "./components/Home";
-import Readme from "./components/Readme";
-import Doc from "./components/Doc";
+import Home from "./pages/Home";
+import Readme from "./pages/Readme";
+import Doc from "./pages/Doc";
 
 function Routes() {
   return (
