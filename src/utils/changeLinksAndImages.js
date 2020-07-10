@@ -1,8 +1,13 @@
 function changeLinksAndImages(markdown, user, repository, path) {
+  if(!user && !repository) {
+    user = "danilomacb"
+    repository = "4noobs"
+  }
+
   let docs;
   let assets;
 
-  if (path === "/:user/:repository") {
+  if (path === "/" || path === "/:user/:repository") {
     docs = new RegExp("./docs", "g");
     assets = new RegExp("./assets", "g");
   }
