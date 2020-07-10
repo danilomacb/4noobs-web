@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown/with-html";
 
 import getMarkdown from "../utils/getMarkdown";
 
-function Home({ match }) {
+function Page({ match }) {
   const [markdown, setMardown] = useState("");
 
   useEffect(() => {
@@ -19,4 +19,4 @@ function Home({ match }) {
   );
 }
 
-export default Home;
+export default Page;

@@ -2,18 +2,16 @@ import React from "react";
 import { Route, BrowserRouter } from "react-router-dom";
 
 import SideBar from "./components/SideBar";
-import Home from "./pages/Home";
-import Readme from "./pages/Readme";
-import Doc from "./pages/Doc";
+import Page from "./components/Page";
 
 function Routes() {
   return (
     <BrowserRouter>
       <SideBar />
 
-      <Route exact path="/" component={Home} />
-      <Route exact path="/:user/:repository" component={Readme} />
-      <Route exact path="/:user/:repository/:file" component={Doc} />
+      <Route exact path="/" component={Page} />
+      <Route exact path="/:user/:repository" component={Page} />
+      <Route exact path="/:user/:repository/:file" component={Page} />
     </BrowserRouter>
   );
 }
