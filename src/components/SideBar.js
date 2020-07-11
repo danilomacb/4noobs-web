@@ -11,11 +11,7 @@ function SideBar() {
   const [frameworksDisplay, setFrameworksDisplay] = useState("none");
 
   function changeDisplay(category, set) {
-    if (category === "none") {
-      set("block");
-    } else {
-      set("none");
-    }
+    category === "none" ? set("block") : set("none");
   }
 
   return (
