@@ -1,7 +1,9 @@
+import links from "../4noobs.json";
+
 function changeLinksAndImages(markdown, user, repository, path) {
-  if(!user && !repository) {
-    user = "danilomacb"
-    repository = "4noobs"
+  if (!user && !repository) {
+    user = links.home.user;
+    repository = links.home.repository;
   }
 
   let docs;
