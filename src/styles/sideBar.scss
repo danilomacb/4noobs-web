@@ -15,11 +15,77 @@ li {
   list-style: none;
 }
 
-nav ul li a {
-  color: $white;
+a:hover {
+  text-decoration: none;
 }
 
-nav ul li a img {
-  height: 56px;
-  width: 56px;
+#main-list {
+  width: 100%;
+  margin: 10px;
+}
+
+#home {
+  a {
+    display: block;
+
+    img {
+      height: 56px;
+      width: 56px;
+      margin: 8px;
+    }
+  }
+
+  &:hover {
+    background-color: $purple1;
+  }
+}
+
+.category {
+  color: $white;
+  padding: 8px;
+  margin-top: 8px;
+
+  svg {
+    margin-left: 8px;
+  }
+
+  &:hover {
+    background-color: $purple1;
+    cursor: pointer;
+  }
+}
+
+.category-list {
+  background-color: $purple4;
+  border-radius: 0 0 8px 8px;
+}
+
+.category-item {
+  padding: 8px;
+
+  a {
+    color: $white;
+    display: block;
+  }
+
+  &:hover {
+    background-color: $purple3;
+  }
+
+  &:last-child {
+    border-radius: 0 0 8px 8px;
+  }
+}
+
+#model {
+  padding: 8px;
+  margin-top: 8px;
+
+  a {
+    color: $white;
+  }
+
+  &:hover {
+    background-color: $purple1;
+  }
 }
