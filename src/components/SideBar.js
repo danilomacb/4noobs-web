@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import "../styles/sideBar.scss";
-import pages from "../4noobs.json";
+import links from "../4noobs.json";
 
 function SideBar() {
   return (
@@ -14,11 +14,21 @@ function SideBar() {
           </Link>
         </li>
 
-        {pages.map((page) => (
-          <li key={page.name}>
-            <Link to={`/${page.user}/${page.repository}`}>{page.name}</Link>
+        {links.programingLanguages.map((link) => (
+          <li key={link.name}>
+            <Link to={`/${link.user}/${link.repository}`}>{link.name}</Link>
           </li>
         ))}
+
+        {links.frameworks.map((link) => (
+          <li key={link.name}>
+            <Link to={`/${link.user}/${link.repository}`}>{link.name}</Link>
+          </li>
+        ))}
+
+        <li>
+          <Link to={`/${links.model.user}/${links.model.repository}`}>{links.model.name}</Link>
+        </li>
       </ul>
     </nav>
   );

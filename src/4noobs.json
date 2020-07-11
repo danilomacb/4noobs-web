@@ -1,17 +1,30 @@
-[
-  {
+{
+  "home": {
+    "user": "danilomacb",
+    "repository": "4noobs"
+  },
+  "programingLanguages": [
+    {
+      "name": "Java",
+      "user": "danilomacb",
+      "repository": "java4noobs"
+    },
+    {
+      "name": "Elixir",
+      "user": "danilomacb",
+      "repository": "elixir4noobs"
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Rails",
+      "user": "danilomacb",
+      "repository": "rails4noobs"
+    }
+  ],
+  "model": {
     "name": "Modelo de Teste",
     "user": "danilomacb",
     "repository": "4noobs-model"
-  },
-  {
-    "name": "Java",
-    "user": "danilomacb",
-    "repository": "java4noobs"
-  },
-  {
-    "name": "Elixir",
-    "user": "danilomacb",
-    "repository": "elixir4noobs"
   }
-]
+}
