@@ -9,6 +9,7 @@ Este projeto é feito com React e tem como objetivo exibir todos os 4noobs em ap
 3. Os outros arquivos de markdown devem estar dentro da pasta 4noobsDocs, sem subpastas dentro da mesma
 4. As imagens devem ficar dentro da pasta 4noobsAssets, sem subpastas dentro da mesma
 5. Os links e imagens devem começar com ./
+6. Links para o roadmap (README.md) devem ser ../README.md
 
 # Recomendações
 
