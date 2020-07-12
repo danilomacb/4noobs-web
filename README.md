@@ -17,4 +17,8 @@ Este projeto é feito com React e tem como objetivo exibir todos os 4noobs em ap
 2. Não coloque espaço e nem acentuação nos nomes dos arquivos
 3. Crie arquivos com nomes ordenados
 4. Caso queira criar subcategorias coloque no início do nome do arquivo. Ex.: 1-Categoria_1-Nome.md
-5. Coloque links nos arquivos para voltar, avançar e retornar ao roadmap 
+5. Coloque links nos arquivos para voltar, avançar e retornar ao roadmap
+
+# Adicionando um novo 4noobs
+
+Adicionar um novo 4noobs não vai ser uma tarefa difícil, dentro da pasta src existe um arquivo chamado 4noobs.json, que é de lá quem vem as informações dos 4noobs que serão exibidos. Esse arquivo é separado por categoria, então basta escolher uma categoria e adicionar um json dentro do array da mesma contendo o nome que será exibido na sidebar, o nome do usuário e do repositório do github. Agora adicionar uma nova categoria é um pouco mais complicado, pois na sidebar as categorias não são dinâmicas, então vai ser necessário alterar o código do component SideBar.js
