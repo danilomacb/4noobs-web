@@ -13,6 +13,8 @@ Este projeto é feito com React e tem como objetivo exibir todos os 4noobs em ap
 
 # Recomendações
 
-1. Não coloque espaço e nem acentuação nos nomes dos arquivos
-2. Crie arquivos com nomes ordenados
-3. Caso queira criar subcategorias coloque no início do nome do arquivo. Ex.: 1-Categoria_1-Nome.md
+1. Siga o modelo do [4noobs-model](https://github.com/danilomacb/4noobs-model)
+2. Não coloque espaço e nem acentuação nos nomes dos arquivos
+3. Crie arquivos com nomes ordenados
+4. Caso queira criar subcategorias coloque no início do nome do arquivo. Ex.: 1-Categoria_1-Nome.md
+5. Coloque links nos arquivos para voltar, avançar e retornar ao roadmap 
