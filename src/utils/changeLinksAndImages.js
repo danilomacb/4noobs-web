@@ -27,6 +27,10 @@ function changeLinksAndImages(markdown, user, repository, path) {
     `https://raw.githubusercontent.com/${user}/${repository}/master/4noobsAssets`
   );
 
+  const roadmap = new RegExp("../README.md", "g");
+
+  newMarkdown = newMarkdown.replace(roadmap, `/${user}/${repository}`);
+
   return newMarkdown;
 }
 
