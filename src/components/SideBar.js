@@ -9,6 +9,7 @@ import links from "../4noobs.json";
 function SideBar() {
   const [languagesDisplay, setLanguagesDisplay] = useState("none");
   const [frameworksDisplay, setFrameworksDisplay] = useState("none");
+  const [toolsDisplay, setToolsDisplay] = useState("none");
 
   function changeDisplay(category, set) {
     category === "none" ? set("block") : set("none");
@@ -55,6 +56,22 @@ function SideBar() {
         </li>
         <ul className="category-list" style={{ display: frameworksDisplay }}>
           {links.frameworks.map((link) => (
+            <li className="category-item" key={link.name}>
+              <Link to={`/${link.user}/${link.repository}`}>{link.name}</Link>
+            </li>
+          ))}
+        </ul>
+
+        <li className="category" onClick={() => changeDisplay(toolsDisplay, setToolsDisplay)}>
+          Ferramentas
+          {toolsDisplay === "none" ? (
+            <FontAwesomeIcon icon={faChevronDown} />
+          ) : (
+            <FontAwesomeIcon icon={faChevronUp} />
+          )}
+        </li>
+        <ul className="category-list" style={{ display: toolsDisplay }}>
+          {links.tools.map((link) => (
             <li className="category-item" key={link.name}>
               <Link to={`/${link.user}/${link.repository}`}>{link.name}</Link>
             </li>
