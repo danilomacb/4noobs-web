@@ -1,21 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 import "../styles/sideBar.scss";
 import links from "../4noobs.json";
-import Category from "./Category"
+import Category from "./Category";
 
 function SideBar() {
-  const [languagesDisplay, setLanguagesDisplay] = useState("none");
-  const [frameworksDisplay, setFrameworksDisplay] = useState("none");
-  const [toolsDisplay, setToolsDisplay] = useState("none");
-
-  function changeDisplay(category, set) {
-    category === "none" ? set("block") : set("none");
-  }
-
   return (
     <nav>
       <ul id="main-list">
