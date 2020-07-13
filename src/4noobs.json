@@ -29,6 +29,13 @@
       "repository": "markdown4noobs"
     }
   ],
+  "operationalSystems": [
+    {
+      "name": "Windows",
+      "user": "danilomacb",
+      "repository": "windows4noobs"
+    }
+  ],
   "model": {
     "name": "Modelo de Teste",
     "user": "danilomacb",
