@@ -5,6 +5,7 @@ import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 import "../styles/sideBar.scss";
 import links from "../4noobs.json";
+import Category from "./Category"
 
 function SideBar() {
   const [languagesDisplay, setLanguagesDisplay] = useState("none");
@@ -24,59 +25,9 @@ function SideBar() {
           </Link>
         </li>
 
-        <li
-          className="category"
-          onClick={() => changeDisplay(languagesDisplay, setLanguagesDisplay)}
-        >
-          Linguagens de Programação
-          {languagesDisplay === "none" ? (
-            <FontAwesomeIcon icon={faChevronDown} />
-          ) : (
-            <FontAwesomeIcon icon={faChevronUp} />
-          )}
-        </li>
-        <ul className="category-list" style={{ display: languagesDisplay }}>
-          {links.programingLanguages.map((link) => (
-            <li className="category-item" key={link.name}>
-              <Link to={`/${link.user}/${link.repository}`}>{link.name}</Link>
-            </li>
-          ))}
-        </ul>
-
-        <li
-          className="category"
-          onClick={() => changeDisplay(frameworksDisplay, setFrameworksDisplay)}
-        >
-          Frameworks
-          {frameworksDisplay === "none" ? (
-            <FontAwesomeIcon icon={faChevronDown} />
-          ) : (
-            <FontAwesomeIcon icon={faChevronUp} />
-          )}
-        </li>
-        <ul className="category-list" style={{ display: frameworksDisplay }}>
-          {links.frameworks.map((link) => (
-            <li className="category-item" key={link.name}>
-              <Link to={`/${link.user}/${link.repository}`}>{link.name}</Link>
-            </li>
-          ))}
-        </ul>
-
-        <li className="category" onClick={() => changeDisplay(toolsDisplay, setToolsDisplay)}>
-          Ferramentas
-          {toolsDisplay === "none" ? (
-            <FontAwesomeIcon icon={faChevronDown} />
-          ) : (
-            <FontAwesomeIcon icon={faChevronUp} />
-          )}
-        </li>
-        <ul className="category-list" style={{ display: toolsDisplay }}>
-          {links.tools.map((link) => (
-            <li className="category-item" key={link.name}>
-              <Link to={`/${link.user}/${link.repository}`}>{link.name}</Link>
-            </li>
-          ))}
-        </ul>
+        <Category title="Linguages de Programação" array={links.programingLanguages} />
+        <Category title="Frameworks" array={links.frameworks} />
+        <Category title="Ferramentas" array={links.tools} />
 
         <li id="model">
           <Link to={`/${links.model.user}/${links.model.repository}`}>{links.model.name}</Link>
