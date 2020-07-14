@@ -19,6 +19,7 @@ function SideBar() {
         <Category title="Frameworks" array={links.frameworks} />
         <Category title="Ferramentas" array={links.tools} />
         <Category title="Sistemas Operacionais" array={links.operationalSystems} />
+        <Category title="Design" array={links.design} />
 
         <li id="model">
           <Link to={`/${links.model.user}/${links.model.repository}`}>{links.model.name}</Link>

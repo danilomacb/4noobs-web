@@ -36,6 +36,13 @@
       "repository": "windows4noobs"
     }
   ],
+  "design": [
+    {
+      "name": "UI",
+      "user": "danilomacb",
+      "repository": "ui4noobs"
+    }
+  ],
   "model": {
     "name": "Modelo de Teste",
     "user": "danilomacb",
