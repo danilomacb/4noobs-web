@@ -11,8 +11,8 @@ nav {
   overflow-y: auto;
 }
 
-li {
-  list-style: none;
+nav ul {
+  font-size: 12pt;
 }
 
 a:hover {
@@ -25,6 +25,9 @@ a:hover {
 }
 
 #home {
+  list-style: none;
+  margin: 0;
+
   a {
     display: block;
 
@@ -43,7 +46,8 @@ a:hover {
 .category {
   color: $white;
   padding: 8px;
-  margin-top: 8px;
+  margin: 8px 0 0 0;
+  list-style: none;
 
   svg {
     margin-left: 8px;
@@ -62,6 +66,8 @@ a:hover {
 
 .category-item {
   padding: 8px;
+  margin: 0;
+  list-style: none;
 
   a {
     color: $white;
@@ -79,7 +85,8 @@ a:hover {
 
 #model {
   padding: 8px;
-  margin-top: 8px;
+  margin: 8px 0 0 0;
+  list-style: none;
 
   a {
     color: $white;
