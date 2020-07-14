@@ -21,4 +21,8 @@ Este projeto é feito com React e tem como objetivo exibir todos os 4noobs em ap
 
 # Adicionando um novo 4noobs
 
-Adicionar um novo 4noobs não vai ser uma tarefa difícil, dentro da pasta src existe um arquivo chamado 4noobs.json, que é de lá quem vem as informações dos 4noobs que serão exibidos. Esse arquivo é separado por categoria, então basta escolher uma categoria e adicionar um json dentro do array da mesma contendo o nome que será exibido na sidebar, o nome do usuário e do repositório do github. Agora adicionar uma nova categoria é um pouco mais complicado, pois na sidebar as categorias não são dinâmicas, então vai ser necessário alterar o código do component SideBar.js
+Adicionar um novo 4noobs não vai ser uma tarefa difícil, dentro da pasta **src** existe um arquivo chamado **4noobs.json**, que contém as informações dos 4noobs que serão exibidos. Esse arquivo é separado por categoria, então basta escolher uma categoria e adicionar um json dentro do array da categoria escolhida, contendo o nome que será exibido na **SideBar**, o nome do usuário e nome do repositório do github.
+
+# Adicionando uma nova categoria
+
+Adicionar uma nova categoria é um pouco mais complicado, pois na **SideBar** as categorias não são dinâmicas, então vai ser necessário alterar o código do component **SideBar**. Porém existe um componente chamado **Category** que recebe 2 props, um title que será usado para exibir na **SideBar**, e um array que contém a chave corresponde no **4noobs.json**, então basta criar uma nova instância na **SideBar**.
