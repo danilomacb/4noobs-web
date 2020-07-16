@@ -83,10 +83,12 @@ img {
 code {
   background-color: $gray2;
   padding: 3px;
+  border-radius: 10px;
 }
 
 pre code {
   display: block;
+  padding: 10px;
 }
 
 main {
