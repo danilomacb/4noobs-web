@@ -57,7 +57,7 @@ h6 {
 }
 
 p {
-  margin: 10px 0;
+  margin: 8px 0;
 }
 
 table {
@@ -76,34 +76,35 @@ tr:nth-child(even) {
 }
 
 img {
-  margin: 20px;
+  margin: 16px;
   max-width: 100%;
 }
 
 code {
   background-color: $gray2;
   padding: 3px;
-  border-radius: 10px;
+  border-radius: 8px;
+  margin: 8px 0;
 }
 
 pre code {
   display: block;
-  padding: 10px;
+  padding: 8px;
 }
 
 main {
   display: block;
-  padding: 50px;
+  padding: 48px;
   margin-left: 300px;
   max-width: 100%;
 }
 
 li {
-  margin: 10px 0 0 32px;
+  margin: 8px 0 0 32px;
 }
 
 hr {
   border: 0;
   border-top: 4px solid $gray;
-  margin: 20px 0 20px 0;
+  margin: 16px 0;
 }
