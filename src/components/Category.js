@@ -4,23 +4,45 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 function Category({ title, array }) {
-  const [display, setdisplay] = useState("none");
+  const [displayed, setdisplayed] = useState(false);
 
-  function changeDisplay() {
-    display === "none" ? setdisplay("block") : setdisplay("none");
+  let category;
+  let categoryList;
+
+  function changeDisplayed() {
+    if (!displayed) {
+      categoryList.style.display = "block";
+      category.classList.add("displayed");
+      setdisplayed(true);
+    } else {
+      categoryList.style.display = "none";
+      category.classList.remove("displayed");
+      setdisplayed(false);
+    }
   }
 
   return (
     <>
-      <li className="category" onClick={changeDisplay}>
+      <li
+        className="category"
+        onClick={changeDisplayed}
+        ref={(li) => {
+          category = li;
+        }}
+      >
         {title}
-        {display === "none" ? (
+        {!displayed ? (
           <FontAwesomeIcon icon={faChevronDown} />
         ) : (
           <FontAwesomeIcon icon={faChevronUp} />
         )}
       </li>
-      <ul className="category-list" style={{ display: display }}>
+      <ul
+        className="category-list"
+        ref={(ul) => {
+          categoryList = ul;
+        }}
+      >
         {array.map((link) => (
           <li className="category-item" key={link.name}>
             <Link to={`/${link.user}/${link.repository}`}>{link.name}</Link>

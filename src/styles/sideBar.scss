@@ -27,6 +27,7 @@ a:hover {
 #home {
   list-style: none;
   margin: 0;
+  border-radius: 8px;
 
   a {
     display: block;
@@ -48,6 +49,7 @@ a:hover {
   padding: 8px;
   margin: 8px 0 0 0;
   list-style: none;
+  border-radius: 8px;
 
   svg {
     margin-left: 8px;
@@ -62,6 +64,7 @@ a:hover {
 .category-list {
   background-color: $purple4;
   border-radius: 0 0 8px 8px;
+  display: none;
 }
 
 .category-item {
@@ -83,10 +86,21 @@ a:hover {
   }
 }
 
+.displayed {
+  background-color: $purple4;
+  border-radius: 8px 8px 0 0;
+  border-bottom: 1px solid $purple2;
+
+  &:hover {
+    background-color: $purple3;
+  }
+}
+
 #model {
   padding: 8px;
   margin: 8px 0 0 0;
   list-style: none;
+  border-radius: 8px;
 
   a {
     color: $white;
