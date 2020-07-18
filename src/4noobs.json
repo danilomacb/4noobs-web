@@ -20,6 +20,11 @@
       "name": "Rails",
       "user": "danilomacb",
       "repository": "rails4noobs"
+    },
+    {
+      "name": "Flask",
+      "user": "danilomacb",
+      "repository": "flask4noobs"
     }
   ],
   "tools": [
