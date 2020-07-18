@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "../styles/sideBar.scss";
 import links from "../4noobs.json";
 import Category from "./Category";
+import Socials from "./Socials";
 
 function SideBar() {
   return (
@@ -24,6 +25,8 @@ function SideBar() {
         <li id="model">
           <Link to={`/${links.model.user}/${links.model.repository}`}>{links.model.name}</Link>
         </li>
+
+        <Socials />
       </ul>
     </nav>
   );

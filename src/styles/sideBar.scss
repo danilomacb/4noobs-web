@@ -96,6 +96,26 @@ a:hover {
   }
 }
 
+#socials {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0;
+}
+
+.social {
+  color: $white;
+  height: 32px;
+  width: 32px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: $purple4;
+  }
+}
+
 #model {
   padding: 8px;
   margin: 8px 0 0 0;
