@@ -8,6 +8,10 @@ function SwitchButton() {
   let checkbox;
 
   useEffect(() => {
+    if(!localStorage.getItem("theme")) {
+      localStorage.setItem("theme", "light");
+    }
+
     if (localStorage.getItem("theme") === "dark") {
       document.body.id = "dark-theme";
       checkbox.checked = true;
