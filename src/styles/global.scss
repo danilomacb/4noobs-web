@@ -9,6 +9,7 @@
 
 a {
   text-decoration: none;
+  color: $purple1;
 
   &:hover {
     text-decoration: underline;
@@ -107,4 +108,17 @@ hr {
   border: 0;
   border-top: 4px solid $gray;
   margin: 16px 0;
+}
+
+#dark-theme {
+  background-color: $black;
+  color: $white;
+
+  code {
+    color: $black;
+  }
+
+  tr:nth-child(even) {
+    background-color: $black2;
+  }
 }

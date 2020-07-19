@@ -9,14 +9,22 @@ nav {
   width: 300px;
   background-color: $purple2;
   overflow-y: auto;
-}
 
-nav ul {
-  font-size: 12pt;
-}
+  ul {
+    font-size: 12pt;
+  }
 
-a:hover {
-  text-decoration: none;
+  li {
+    list-style: none;
+  }
+
+  a {
+    color: $white !important;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 #main-list {
@@ -25,7 +33,6 @@ a:hover {
 }
 
 #home {
-  list-style: none;
   margin: 0;
   border-radius: 8px;
 
@@ -48,7 +55,6 @@ a:hover {
   color: $white;
   padding: 8px;
   margin: 8px 0 0 0;
-  list-style: none;
   border-radius: 8px;
 
   svg {
@@ -70,7 +76,6 @@ a:hover {
 .category-item {
   padding: 8px;
   margin: 0;
-  list-style: none;
 
   a {
     color: $white;
@@ -119,7 +124,6 @@ a:hover {
 #model {
   padding: 8px;
   margin: 8px 0 0 0;
-  list-style: none;
   border-radius: 8px;
 
   a {

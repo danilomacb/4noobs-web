@@ -5,6 +5,7 @@ import "../styles/sideBar.scss";
 import links from "../4noobs.json";
 import Category from "./Category";
 import Socials from "./Socials";
+import SwitchButton from "./SwitchButton";
 
 function SideBar() {
   return (
@@ -15,6 +16,8 @@ function SideBar() {
             <img src={`${process.env.PUBLIC_URL}/images/he4rt.png`} alt="4noobs" />
           </Link>
         </li>
+
+        <SwitchButton />
 
         <Category title="Linguages de Programação" array={links.programingLanguages} />
         <Category title="Frameworks" array={links.frameworks} />
