@@ -121,6 +121,19 @@ nav {
   }
 }
 
+#menu-button {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  margin: 5px;
+  padding: 10px 12px 7px 12px;
+  border: none;
+  border-radius: 20px;
+  outline: 0;
+  background: $purple4;
+  color: $white;
+}
+
 #model {
   padding: 8px;
   margin: 8px 0 0 0;
@@ -132,5 +145,25 @@ nav {
 
   &:hover {
     background-color: $purple1;
+  }
+}
+
+@media (max-width: 1100px) {
+  #menu-button {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  main {
+    margin: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  nav {
+    width: 100%;
   }
 }
