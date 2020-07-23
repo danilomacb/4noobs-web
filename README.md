@@ -19,6 +19,7 @@ Este projeto é feito com React e tem como objetivo exibir todos os 4noobs em ap
 4. Caso queira criar subcategorias coloque no início do nome do arquivo. Ex.: 1-Categoria_1-Nome.md
 5. Coloque links nos arquivos para voltar, avançar e retornar ao roadmap
 6. Use imagens locais, imagens com origens externas tabém irão funcionar, porém existe a possibilidade delas serem alteradas, removidas, ou não serem exibidas por outros motivos, então use imagens locais de preferência
+7. Tome cuidado com imagens com fundo transparente, lembre-se que o site possui temas claro e escuro
 
 # Adicionando um novo 4noobs
 
