@@ -126,10 +126,13 @@ nav {
   position: fixed;
   z-index: 1;
   margin: 5px;
-  padding: 10px 12px 7px 12px;
-  border: none;
+  width: 40px;
+  height: 40px;
   border-radius: 20px;
+  padding-top: 3px;
+  border: none;
   outline: 0;
+  opacity: 0.7;
   background: $purple4;
   color: $white;
 }

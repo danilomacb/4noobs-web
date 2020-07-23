@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 import "../styles/sideBar.scss";
 import links from "../4noobs.json";
@@ -10,17 +10,22 @@ import Socials from "./Socials";
 import SwitchButton from "./SwitchButton";
 
 function SideBar() {
+  const [menuOpened, setMenuOpened] = useState(false);
+
   let nav;
 
   function showMenu() {
-    nav.style.display === "flex" ? nav.style.display = "none" : nav.style.display = "flex"
+    nav.style.display === "flex" ? (nav.style.display = "none") : (nav.style.display = "flex");
+    menuOpened ? setMenuOpened(false) : setMenuOpened(true);
   }
 
   return (
     <>
-      <button id="menu-button" onClick={showMenu}><FontAwesomeIcon icon={faBars} /></button>
+      <button id="menu-button" onClick={showMenu}>
+        {menuOpened ? <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />}
+      </button>
 
-      <nav ref={element => nav = element}>
+      <nav ref={(element) => (nav = element)}>
         <ul id="main-list">
           <li id="home">
             <Link to="/">
