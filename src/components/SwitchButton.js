@@ -6,23 +6,36 @@ import "../styles/switchButton.scss";
 
 function SwitchButton() {
   let checkbox;
+  let slider;
+  let circle;
 
   useEffect(() => {
-    if(!localStorage.getItem("theme")) {
+    if (!localStorage.getItem("theme")) {
       localStorage.setItem("theme", "light");
     }
 
     if (localStorage.getItem("theme") === "dark") {
+      circle.style.transform = "translateX(26px)";
+      slider.classList.add("checked");
+
       document.body.id = "dark-theme";
       checkbox.checked = true;
     }
-  }, [checkbox]);
+  }, [circle, slider, checkbox]);
 
   function changeTheme() {
     if (localStorage.getItem("theme") === "light") {
+      circle.style.transition = "0.4s";
+      circle.style.transform = "translateX(26px)";
+      slider.classList.add("checked");
+
       document.body.id = "dark-theme";
       localStorage.setItem("theme", "dark");
     } else {
+      circle.style.transition = "0.4s";
+      circle.style.transform = "translateX(0px)";
+      slider.classList.remove("checked");
+
       document.body.id = "";
       localStorage.setItem("theme", "light");
     }
@@ -33,7 +46,9 @@ function SwitchButton() {
       <FontAwesomeIcon icon={faSun} />
       <label id="switch">
         <input type="checkbox" onClick={changeTheme} ref={(input) => (checkbox = input)} />
-        <span id="slider"></span>
+        <span id="slider" ref={(span) => (slider = span)}>
+          <div id="circle" ref={(div) => (circle = div)}></div>
+        </span>
       </label>
       <FontAwesomeIcon icon={faMoon} />
     </li>
