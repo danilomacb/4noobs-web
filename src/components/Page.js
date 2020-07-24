@@ -12,6 +12,14 @@ function RouterLink(props) {
   );
 }
 
+function ResponsiveTable(props) {
+  return (
+    <div className="table-container">
+      <table>{props.children}</table>
+    </div>
+  );
+}
+
 function Page({ match }) {
   const [markdown, setMardown] = useState("");
 
@@ -26,7 +34,7 @@ function Page({ match }) {
       <ReactMarkdown
         source={markdown}
         escapeHtml={false}
-        renderers={{ link: RouterLink }}
+        renderers={{ link: RouterLink, table: ResponsiveTable }}
       />
     </main>
   );

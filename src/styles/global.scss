@@ -114,6 +114,7 @@ hr {
 
 ::-webkit-scrollbar {
   width: 10px;
+  height: 10px;
 }
 ::-webkit-scrollbar-track {
   background: $gray;
@@ -137,4 +138,8 @@ hr {
   tr:nth-child(even) {
     background-color: $black2;
   }
+}
+
+.table-container {
+  overflow-x: auto;
 }
