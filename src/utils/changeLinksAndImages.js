@@ -8,10 +8,10 @@ function changeLinksAndImages(markdown, user, repository, path) {
 
   let newMarkdown = markdown;
 
-  newMarkdown = newMarkdown.replace(/\.*\.\/4noobsDocs/g, `/${user}/${repository}`);
+  newMarkdown = newMarkdown.replace(/\.+\/4noobsDocs/g, `/${user}/${repository}`);
 
   newMarkdown = newMarkdown.replace(
-    /\.*\.\/4noobsAssets/g,
+    /\.+\/4noobsAssets/g,
     `https://raw.githubusercontent.com/${user}/${repository}/master/4noobsAssets`
   );
 
