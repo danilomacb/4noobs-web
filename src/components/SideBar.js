@@ -15,7 +15,7 @@ function SideBar() {
   let nav;
 
   function showMenu() {
-    nav.style.display === "flex" ? (nav.style.display = "none") : (nav.style.display = "flex");
+    nav.style.display === "block" ? (nav.style.display = "none") : (nav.style.display = "block");
     menuOpened ? setMenuOpened(false) : setMenuOpened(true);
   }
 
@@ -46,6 +46,8 @@ function SideBar() {
           </li>
 
           <Socials />
+
+          <li id="credits">Desenvolvido por <a href="https://github.com/danilomacb">danilomacb</a></li>
         </ul>
       </nav>
     </>

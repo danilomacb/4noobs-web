@@ -4,7 +4,7 @@ import { faDiscord, faTwitter, faInstagram, faFacebookF } from "@fortawesome/fre
 
 function Socials() {
   return (
-    <div id="socials">
+    <li id="socials">
       <a href="https://discord.com/invite/5kwDQuv" className="social">
         <FontAwesomeIcon icon={faDiscord} />
       </a>
@@ -17,7 +17,7 @@ function Socials() {
       <a href="https://www.facebook.com/groups/he4rt" className="social">
         <FontAwesomeIcon icon={faFacebookF} />
       </a>
-    </div>
+    </li>
   );
 }
 
