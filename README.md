@@ -28,3 +28,11 @@ Adicionar um novo 4noobs não vai ser uma tarefa difícil, dentro da pasta **src
 # Adicionando uma nova categoria
 
 Adicionar uma nova categoria é um pouco mais complicado, pois na **SideBar** as categorias não são dinâmicas, então vai ser necessário alterar o código do component **SideBar**. Porém existe um componente chamado **Category** que recebe 2 props, um title que será usado para exibir na **SideBar**, e um array que contém a chave corresponde no **4noobs.json**, então basta criar uma nova instância na **SideBar**.
+
+# Problemas / em andamento
+
+1. Por enquanto quase todos os repositórios que estão sendo utilizados são forks, então será necessário alterar todos os 4noobs para que funcione da forma correta no site
+2. No momento somente links em markdown estão sendo convertidos para o component Link do react router dom, ou seja, links em HTML irão recarregar a página
+3. Muitas imagens só são exibidas de forma clara com fundo branco, agora com o tema dark será necessário editar algumas imagens
+4. Tabelas não funcionam muito bem de forma responsiva, as tabelas que ultrapassam a largura da tela possuem uma barra lateral própria, porém seria melhor não utilizar tabelas, principalmente na home
+5. Os códigos não possuem estilização, seria interessante possuir pelo menos cores diferentes até para facilitar o entendimento
