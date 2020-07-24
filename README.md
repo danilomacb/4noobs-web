@@ -1,3 +1,7 @@
+# Link
+
+Este projeto está sendo hospedado em: [https://4noobs.netlify.app/](https://4noobs.netlify.app/)
+
 # Sobre
 
 Este projeto é feito com React e tem como objetivo exibir todos os 4noobs em apenas um lugar. Ele vai ler e exibir os arquivos markdown, e irá fazer modificações nos links e origens de imagens para que a navegação na página seja possível, para isso é preciso serguir as regras abaixo.
