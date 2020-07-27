@@ -32,6 +32,11 @@
       "name": "Markdown",
       "user": "danilomacb",
       "repository": "markdown4noobs"
+    },
+    {
+      "name": "Window Manager",
+      "user": "i686leak",
+      "repository": "wm4noobs"
     }
   ],
   "operationalSystems": [
