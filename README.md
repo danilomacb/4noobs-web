@@ -40,3 +40,4 @@ Adicionar uma nova categoria é um pouco mais complicado, pois na **SideBar** as
 3. Muitas imagens só são exibidas de forma clara com fundo branco, agora com o tema dark será necessário editar algumas imagens
 4. Tabelas não funcionam muito bem de forma responsiva, as tabelas que ultrapassam a largura da tela possuem uma barra lateral própria, porém seria melhor não utilizar tabelas, principalmente na home
 5. Os códigos não possuem estilização, seria interessante possuir pelo menos cores diferentes até para facilitar o entendimento
+6. Fazer o SEO
