@@ -10,10 +10,9 @@ Este projeto é feito com React e tem como objetivo exibir todos os 4noobs em ap
 
 1. O nome do readme deve ser README.md
 2. O readme deve conter um roadmap com os links para os arquivos, senão fica impossível de navegar pelos arquivos no site
-3. Os outros arquivos de markdown devem estar dentro da pasta 4noobsDocs, sem subpastas dentro da mesma
-4. As imagens devem ficar dentro da pasta 4noobsAssets, sem subpastas dentro da mesma
-5. Os links e imagens devem começar com ./
-6. Links para o roadmap (README.md) devem ser ../README.md
+3. Os outros arquivos de markdown devem estar dentro da pasta 4noobsDocs, sem subpastas dentro da mesma, e as imagens devem ficar dentro da pasta 4noobsAssets, também sem subpastas dentro da mesma. As pastas devem possuir esse nome específico pois é a partir dele que serão feitas alterações no arquivo, logo se possuisse um nome genérico poderiam ocorrer alterações indesejadas
+4. Os links e imagens devem começar com ./
+5. Links para o roadmap (README.md) devem ser ../README.md
 
 # Recomendações
 
