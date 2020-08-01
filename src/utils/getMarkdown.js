@@ -10,12 +10,12 @@ async function getMarkdown(match, history) {
         'https://api.github.com/repos/danilomacb/4noobs/contents/README.md';
       break;
 
-    case '/:user/:repository/:file/*':
-      link = `https://api.github.com/repos/${user}/${repository}/contents/4noobsDocs/${file}/${match.params[0]}`;
-      break;
-
     case '/:user/:repository':
       link = `https://api.github.com/repos/${user}/${repository}/contents/README.md`;
+      break;
+
+    case '/:user/:repository/:file/*':
+      link = `https://api.github.com/repos/${user}/${repository}/contents/4noobsDocs/${file}/${match.params[0]}`;
       break;
 
     default:
