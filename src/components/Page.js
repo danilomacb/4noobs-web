@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import ReactMarkdown from 'react-markdown/with-html';
-import { Link, useHistory } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import ReactMarkdown from "react-markdown/with-html";
+import { Link, useHistory } from "react-router-dom";
 
-import getMarkdown from '../utils/getMarkdown';
+import getMarkdown from "../utils/getMarkdown";
 
 function RouterLink(props) {
   return props.href.match(/^(https?:)?\/\//) ? (
@@ -25,7 +25,7 @@ function ResponsiveTable(props) {
 function Page({ match }) {
   const history = useHistory();
 
-  const [markdown, setMardown] = useState('');
+  const [markdown, setMardown] = useState("");
 
   useEffect(() => {
     getMarkdown(match, history).then((response) => {
