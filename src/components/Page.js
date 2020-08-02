@@ -6,9 +6,7 @@ import getMarkdown from "../utils/getMarkdown";
 
 function RouterLink(props) {
   return props.href.match(/^(https?:)?\/\//) ? (
-    <a href={props.href} target="_blank" rel="noopener noreferrer">
-      {props.children}
-    </a>
+    <a {...props}></a>
   ) : (
     <Link to={props.href}>{props.children}</Link>
   );
