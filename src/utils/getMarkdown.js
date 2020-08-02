@@ -3,7 +3,6 @@ import changeLinksAndImages from "./changeLinksAndImages";
 async function getMarkdown(match, history) {
   let link;
   const { user, repository, path, file } = match.params;
-  console.log(match.params);
 
   switch (match.path) {
     case "/":
