@@ -1,6 +1,6 @@
 import changeLinksAndImages from "./changeLinksAndImages";
 
-async function getMarkdown(match, history) {
+async function getMarkdown(match) {
   let link;
   const { user, repository, path, file } = match.params;
 
@@ -26,7 +26,7 @@ async function getMarkdown(match, history) {
   }
 
   let response = await fetch(link);
-  if (response.status === 404) return history.push("/");
+  if (!response.ok) return response;
 
   response = await response.json();
   response = await fetch(response.download_url);

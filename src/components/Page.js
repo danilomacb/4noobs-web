@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown/with-html";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import getMarkdown from "../utils/getMarkdown";
 
@@ -21,15 +21,21 @@ function ResponsiveTable(props) {
 }
 
 function Page({ match }) {
-  const history = useHistory();
-
-  const [markdown, setMardown] = useState("");
+  const [markdown, setMarkdown] = useState("");
 
   useEffect(() => {
-    getMarkdown(match, history).then((response) => {
-      setMardown(response);
+    getMarkdown(match).then((response) => {
+      setMarkdown(response);
     });
-  }, [match, history]);
+  }, [match]);
+
+  if (markdown.status === 404) {
+    return (
+      <main>
+        <h1>404 NOT FOUND</h1>
+      </main>
+    );
+  }
 
   return (
     <main>
