@@ -9,10 +9,10 @@ function Routes() {
     <BrowserRouter>
       <SideBar />
 
-      <Route path="/:user/:repository/:file/*" component={Page} />
-
       <Route exact path="/" component={Page} />
       <Route exact path="/:user/:repository" component={Page} />
+      <Route exact path="/:user/:repository/:file" component={Page} />
+      <Route exact path="/:user/:repository/:file/*" component={Page} />
     </BrowserRouter>
   );
 }
