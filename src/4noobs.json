@@ -37,6 +37,11 @@
       "name": "Window Manager",
       "user": "i686leak",
       "repository": "wm4noobs"
+    },
+    {
+      "name": "Git",
+      "user": "kjkGustavo",
+      "repository": "git4noobs"
     }
   ],
   "operationalSystems": [
