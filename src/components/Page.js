@@ -3,6 +3,7 @@ import ReactMarkdown from "react-markdown/with-html";
 import { Link } from "react-router-dom";
 
 import getMarkdown from "../utils/getMarkdown";
+import CodeRenderer from "./CodeRenderer";
 
 function RouterLink(props) {
   return props.href.match(/^(https?:)?\/\//) ? (
@@ -45,6 +46,8 @@ function Page({ match }) {
         renderers={{
           link: RouterLink,
           table: ResponsiveTable,
+          inlineCode: CodeRenderer,
+          code: CodeRenderer,
         }}
       />
     </main>

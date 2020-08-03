@@ -81,19 +81,6 @@ img {
   max-width: 100%;
 }
 
-code {
-  background-color: $gray2;
-  padding: 3px;
-  border-radius: 8px;
-  margin: 8px 0;
-}
-
-pre code {
-  display: block;
-  white-space: pre-wrap;
-  padding: 8px;
-}
-
 main {
   display: block;
   padding: 48px;
@@ -129,10 +116,6 @@ hr {
 #dark-theme {
   background-color: $black;
   color: $white;
-
-  code {
-    color: $black;
-  }
 
   tr:nth-child(even) {
     background-color: $black2;
