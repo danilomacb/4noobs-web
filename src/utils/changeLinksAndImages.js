@@ -15,7 +15,7 @@ function changeLinksAndImages(markdown, user, repository, path) {
     `https://raw.githubusercontent.com/${user}/${repository}/master/4noobsAssets`
   );
 
-  newMarkdown = newMarkdown.replace(/\.\.\/README\.md/g, `/${user}/${repository}`);
+  newMarkdown = newMarkdown.replace(/(\.\.\/)*README\.md/g, `/${user}/${repository}`);
 
   return newMarkdown;
 }
