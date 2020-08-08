@@ -26,10 +26,16 @@ Lowlight.registerLanguage("php", php);
 Lowlight.registerLanguage("py", python);
 Lowlight.registerLanguage("ruby", ruby);
 
-let langs = ["bash", "c", "cpp", "cs", "elixir", "html", "java", "js", "md", "php", "py", "ruby"];
+let langs = ["bash", "c", "cpp", "cs", "elixir", "java", "js", "md", "php", "py", "ruby"];
 
 function CodeRenderer(props) {
   const { language, ...rest } = props;
+
+  const found = langs.find((lang) => lang === language);
+
+  if (!found) {
+    return <Lowlight {...rest} />;
+  }
 
   return <Lowlight language={language} {...rest} />;
 }
