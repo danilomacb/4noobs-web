@@ -5,6 +5,7 @@ import "highlight.js/styles/srcery.css";
 import bash from "highlight.js/lib/languages/bash";
 import cLike from "highlight.js/lib/languages/c-like";
 import elixir from "highlight.js/lib/languages/elixir";
+import go from "highlight.js/lib/languages/go";
 import html from "highlight.js/lib/languages/htmlbars";
 import java from "highlight.js/lib/languages/java";
 import javascript from "highlight.js/lib/languages/javascript";
@@ -12,6 +13,7 @@ import markdown from "highlight.js/lib/languages/markdown";
 import php from "highlight.js/lib/languages/php";
 import python from "highlight.js/lib/languages/python";
 import ruby from "highlight.js/lib/languages/ruby";
+import rust from "highlight.js/lib/languages/rust";
 
 Lowlight.registerLanguage("bash", bash);
 Lowlight.registerLanguage("sh", bash);
@@ -21,6 +23,8 @@ Lowlight.registerLanguage("c++", cLike);
 Lowlight.registerLanguage("csharp", cLike);
 Lowlight.registerLanguage("cs", cLike);
 Lowlight.registerLanguage("elixir", elixir);
+Lowlight.registerLanguage("golang", go);
+Lowlight.registerLanguage("go", go);
 Lowlight.registerLanguage("html", html);
 Lowlight.registerLanguage("java", java);
 Lowlight.registerLanguage("javascript", javascript);
@@ -33,6 +37,8 @@ Lowlight.registerLanguage("python", python);
 Lowlight.registerLanguage("py", python);
 Lowlight.registerLanguage("ruby", ruby);
 Lowlight.registerLanguage("rb", ruby);
+Lowlight.registerLanguage("rust", rust);
+Lowlight.registerLanguage("rs", rust);
 
 let langs = [
   "bash",
@@ -43,6 +49,8 @@ let langs = [
   "csharp",
   "cs",
   "elixir",
+  "golang",
+  "go",
   "html",
   "java",
   "javascript",
@@ -55,6 +63,8 @@ let langs = [
   "py",
   "ruby",
   "rb",
+  "rust",
+  "rs",
 ];
 
 function CodeRenderer(props) {
