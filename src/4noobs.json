@@ -13,6 +13,11 @@
       "name": "Elixir",
       "user": "danilomacb",
       "repository": "elixir4noobs"
+    },
+    {
+      "name": "Dart",
+      "user": "pksasso",
+      "repository": "dart4noobs"
     }
   ],
   "frameworks": [
@@ -25,11 +30,6 @@
       "name": "Flask",
       "user": "freazesss",
       "repository": "flask4noobs"
-    },
-    {
-      "name": "Dart",
-      "user": "pksasso",
-      "repository": "dart4noobs"
     }
   ],
   "tools": [
