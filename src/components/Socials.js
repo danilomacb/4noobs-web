@@ -5,16 +5,16 @@ import { faDiscord, faTwitter, faInstagram, faFacebookF } from "@fortawesome/fre
 function Socials() {
   return (
     <li id="socials">
-      <a href="https://discord.com/invite/5kwDQuv" className="social">
+      <a href="https://discord.com/invite/5kwDQuv" target="_blank" rel="noopener noreferrer" className="social">
         <FontAwesomeIcon icon={faDiscord} />
       </a>
-      <a href="https://twitter.com/he4rtdevs" className="social">
+      <a href="https://twitter.com/he4rtdevs" target="_blank" rel="noopener noreferrer" className="social">
         <FontAwesomeIcon icon={faTwitter} />
       </a>
-      <a href="https://www.instagram.com/heartdevs" className="social">
+      <a href="https://www.instagram.com/heartdevs" target="_blank" rel="noopener noreferrer" className="social">
         <FontAwesomeIcon icon={faInstagram} />
       </a>
-      <a href="https://www.facebook.com/groups/he4rt" className="social">
+      <a href="https://www.facebook.com/groups/he4rt" target="_blank" rel="noopener noreferrer" className="social">
         <FontAwesomeIcon icon={faFacebookF} />
       </a>
     </li>
