@@ -25,16 +25,20 @@ async function getMarkdown(match) {
       break;
   }
 
-  let response = await fetch(link);
-  if (!response.ok) return response;
+  try {
+    let response = await fetch(link);
+    if (!response.ok) return response;
 
-  response = await response.json();
-  response = await fetch(response.download_url);
-  response = await response.text();
+    response = await response.json();
+    response = await fetch(response.download_url);
+    response = await response.text();
 
-  response = changeLinksAndImages(response, user, repository, path);
+    response = changeLinksAndImages(response, user, repository, path);
 
-  return response;
+    return response;
+  } catch (err) {
+    return console.error(err);
+  }
 }
 
 export default getMarkdown;
