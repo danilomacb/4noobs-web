@@ -1,13 +1,13 @@
 # Roadmap
 
 - [Sobre](#Sobre)
-- [Como adaptar um 4noobs?](#Como%20adaptar%20um%204noobs?)
-  - [Alterações obrigatórias](##Alterações%20obrigatórias)
-  - [Alterações recomendadas](##Alterações%20recomendadas)
-- [Adicionando um novo 4noobs ao site](#Adicionando%20um%20novo%204noobs%20ao%20site)
-- [Adicionando uma nova categoria ao site](#Adicionando%20uma%20nova%20categoria%20ao%20site)
-- [Estilos em code snippets](#Estilos%20em%20code%20snippets)
-- [Problemas / em andamento](#Problemas%20/%20em%20andamento)
+- [Como adaptar um 4noobs?](#Como-adaptar-um-4noobs?)
+  - [Alterações obrigatórias](##Alterações-obrigatórias)
+  - [Alterações recomendadas](##Alterações-recomendadas)
+- [Adicionando um novo 4noobs ao site](#Adicionando-um-novo-4noobs-ao-site)
+- [Adicionando uma nova categoria ao site](#Adicionando-uma-nova-categoria-ao-site)
+- [Estilos em code snippets](#Estilos-em-code-snippets)
+- [Problemas / em andamento](#Problemas-/-em-andamento)
 
 # Sobre
 
